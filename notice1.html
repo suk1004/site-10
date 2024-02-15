@@ -1,0 +1,469 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"> 
+<title>notice1</title>
+<link rel="stylesheet" href="css/sub.css">
+<link rel="stylesheet" href="css/ScrollTrigger.css"> <!--Data Scroll PlugIn-->
+</head>
+<body>
+<!-- TOP버튼 -->
+<div class="top"><a href="#"></a></div>
+<!-- 가상링크(#)를 걸면 맨위로 올라감  -->
+
+  <div id="wrap">
+    <header>
+      <nav>
+        <div class="logo">
+          <a href="index.html"><img src="image/logo.png" alt=""></a>
+        </div>
+        <ul class="gnb">
+          <li><i class="fa-solid fa-arrow-right-to-bracket"></i></li>
+          <li><a class="modal-notice" href="#none">로그인</a></li>
+          <li>|</li>
+          <li><a href="Join.html">회원가입</a></li>
+        </ul>
+        <div class="allmenu">
+          <div class="trigger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </nav>
+
+
+
+      <!-- 로그인 -->
+      <div class="log">
+        <div class="modal2">
+          <div class="modal-content">
+            <a href="#none" class="btn-close">X</a>
+
+            <div class="modal-body">
+							<img src="image/logo.png" alt="">
+
+							<div class="modal_log">
+								<input type="text" class="modal_box1" name="id" placeholder="아이디를 입력해 주세요.">
+								<input type="password" class="modal_bo2" name="pw" placeholder="비밀번호를 입력해 주세요.">
+							</div>
+
+							<div class="modal_ckb">
+								<div class="modal_ck">
+									<input type="checkbox" value="i1" name="item"><span>자동로그인</span>
+									<p class="modal_ck2">아이디 찾기 | 비밀번호 찾기</p>
+								</div>
+							</div>
+
+							<div class="modal_bto">
+								<a href="index.html" class="modal_bt1">로그인</a>
+							</div>
+
+							<p class="modal_t1">SNS계정 로그인</p>
+
+							<div class="modal_icon">
+								<a target="_blank" href="https://nid.naver.com/nidlogin.login?url=https%3A%2F%2Fpost.naver.com%2Fmy.naver%3FmemberNo%3D25599212"><img src="image/naver.png" alt="" class="modal_icon1"></a>
+								<a target="_blank" href="https://accounts.kakao.com/login/?continue=https%3A%2F%2Fkauth.kakao.com%2Foauth%2Fauthorize%3Fresponse_type%3Dcode%26redirect_uri%3Dhttps%253A%252F%252Fplatform.yeogi.com%252Fapi%252Fusers%252Foauth%252Fkakao%26state%3Da2313799-0a92-4dc9-88e4-b999da3d49ca%26through_account%3Dtrue%26client_id%3D1eff36c782b04e85889f4698bef8673f#login"><img src="image/kakao.png" alt="" class="modal_icon1"></a>
+								<a target="_blank" href="https://www.facebook.com/login.php?skip_api_login=1&api_key=607467975974643&kid_directed_site=0&app_id=607467975974643&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fv16.0%2Fdialog%2Foauth%3Fdisplay%3Dpopup%26scope%3Demail%26client_id%3D607467975974643%26redirect_uri%3Dhttps%253A%252F%252Fplatform.yeogi.com%252Fapi%252Fusers%252Foauth%252Ffacebook%26state%3Dcabae7b9-7c39-4288-9fa5-108556fab1e8%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3Dcc4ba1ac-a24d-4b05-b299-715ceaf19122%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fplatform.yeogi.com%2Fapi%2Fusers%2Foauth%2Ffacebook%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3Dcabae7b9-7c39-4288-9fa5-108556fab1e8%23_%3D_&display=popup&locale=ko_KR&pl_dbl=0"><img src="image/facebook.png" alt="" class="modal_icon1"></a>
+								<a target="_blank" href="https://accounts.google.com/o/oauth2/v2/auth/oauthchooseaccount?response_type=code&prompt=consent&access_type=offline&include_granted_scopes=true&client_id=452013183738-0cmufbcgmh4gn4piq4c99nnqidgvb54n.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Fplatform.yeogi.com%2Fapi%2Fusers%2Foauth%2Fgoogle&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&state=86f7476e-42c6-4032-8c64-1b3cf742138e&service=lso&o2v=2&theme=glif&flowName=GeneralOAuthFlow"><img src="image/google.png" alt="" class="modal_icon1"></a>
+								<a target="_blank" href="https://appleid.apple.com/auth/authorize?client_id=com.yeogi.user&redirect_uri=https%3A%2F%2Fplatform.yeogi.com%2Flogin&response_type=code%20id_token&state=aa0eabc9-72f0-4f0e-824d-ee47cea20886&scope=email&nonce=eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IlhBNUszMkRHNUMifQ.eyJpc3MiOiJHWjlGNExVTURUIiwiaWF0IjoxNzAxMDU3Njk3LCJleHAiOjE3MTY2MDk2OTcsImF1ZCI6Imh0dHBzOi8vYXBwbGVpZC5hcHBsZS5jb20iLCJzdWIiOiJjb20ueWVvZ2kudXNlciJ9.1mCY-6Dsd7mVSTucNmaO76ymbJVvZjr28728mDXU_7IcQ0eTrpJAkNxYZAQybxAuZ9djxr6SGLh7eTl8noDj1Q&response_mode=web_message&frame_id=0b917853-6646-43c2-bec5-74a6d0485dac&m=11&v=1.5.5"><img src="image/apple.png" alt="" class="modal_icon1"></a>
+							</div>
+							
+							<p class="modal_ck4_1"><span>아직 여기어때 회원이 아니신가요?</span><br>
+								회원가입하고 다양한 혜택과 서비스를 이용해 보세요!</p>
+
+							<div class="modal_ck4">
+								<a href="Join.html" class="modal_ck4_2">회원가입</a>
+							</div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+      <!-- Sitemap -->
+      <div class="modal">
+        <div class="sitemap">
+            <ul class="sitemap_list">
+                <li>
+                    <a href="#">회사 .</a>
+                    <ul class="site_sub">
+                        <li><a href="about1.html">회사소개</a>
+                            <div class="site_menu">
+                                <p class="site_main"><a href="#">숙소 .</a></p>
+                                <p><a href="stay1.html">프리미엄 블랙</a></p>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">고객센터 .</a>
+                    <ul class="site_sub">
+                        <li><a href="notice1.html">자주 묻는 질문</a></li>
+                        <li><a href="notice2.html">기업출장 / 복지 서비스 문의</a>
+                            <div class="site_menu">
+                                <p class="site_main"><a href="event.html">이벤트 .</a></p>
+                            </div>
+                            <div class="search0">
+                              <input type="text" class="searchTerm0" placeholder="지역, 숙소명을 입력하세요">
+                              <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+      </div>
+  
+  <!-- /////////////////////////Menu///////////////////////////// -->
+      <div class="main_menu">
+        <div class="main_menu2">
+          <ul class="main_menu3">
+            <li class="main"><a href="#none">회사</a>
+              <ul class="sub">
+                <li><a href="about1.html">회사소개</a></li>
+              </ul>
+            </li>
+            <li class="main"><a href="#none">숙소</a>
+              <ul class="sub">
+                <li><a href="stay1.html">프리미엄블랙</a></li>
+              </ul>
+            </li>
+            <li class="main"><a href="event.html">이벤트</a>
+            </li>
+            <li class="main"><a href="#none">고객센터</a>
+              <ul class="sub">
+                <li><a href="notice1.html">자주 묻는 질문</a></li>
+                <li class="sub_2"><a href="notice2.html">기업 서비스 문의</a></li>
+              </ul>
+            </li>
+          </ul>
+          <div class="search">
+            <input type="text" class="searchTerm" placeholder="지역, 숙소명을 입력하세요">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+
+<!-- ///////////////main////////////// -->
+	<main id="sub4">
+		<div class="sheader-caption">
+			<h2 data-scroll="toggle(.fromBottomIn, .fromBottomOut) addHeight">NOTICE</h2>
+		</div>
+	</main>
+
+
+
+
+	<section id="container">
+    <div class="section_in">
+      
+      <!-- 서브페이지별로 바뀌는 컨텐츠내용영역 -->
+
+      <!-- About1 -->
+    <div class="location">
+      <i class="fa fa-home"></i><span> &gt; notice &gt; </span><span>자주 묻는 질문</span>
+    </div>
+
+    <div class="about_top" data-scroll="toggle(.fromBottomIn, .fromBottomOut) addHeight">
+      <p class="about_top_t1">고객센터</p>
+      <p class="about_top_t2">어려움이나 궁금한 점이 있으신가요?</p>
+    </div>
+
+<!-- sub 콘텐츠 영역 -->
+    <div class="notice1" data-scroll="toggle(.fromBottomIn, .fromBottomOut) addHeight">
+
+      <div class="notice1_top1">
+        <a href="#none"><img src="image/icon9.png" alt=""></a>
+        <p class="notice1_t1">전화번호</p>
+        <p class="notice1_t2">1670-6250</p>
+      </div>
+
+      <div class="notice1_top2">
+        <a href="#none"><img src="image/icon10.png" alt=""></a>
+        <p class="notice1_t1">예약·취소 문의</p>
+        <p class="notice1_t2">공간대여</p>
+      </div>
+
+      <div class="notice1_top3">
+        <a href="#none"><img src="image/icon11.png" alt=""></a>
+        <p class="notice1_t1">상담시간</p>
+        <p class="notice1_t2">오전 9시 ~ 새벽 3시</p>
+      </div>
+
+      <div class="notice1_top4">
+        <a target="_blank" href="https://pf.kakao.com/_fxhnXj"><img src="image/icon12.png" alt=""></a>
+        <p class="notice1_t1">카카오문의</p>
+        <p class="notice1_t2">'여기어때' 채널 추가 후 채팅 가능</p>
+      </div>
+
+    </div>
+
+
+
+
+<!-- /////////////////////////////////////////////////////////////// -->
+    <div class="about_top" data-scroll="toggle(.fromBottomIn, .fromBottomOut) addHeight">
+      <p class="about_top_t1">자주 묻는 질문</p>
+    </div>
+
+
+      <div class="sec_6">
+        <div class="sec6_acodiun">
+
+          <div class="tabMenu1" data-scroll="toggle(.fromBottomIn, .fromBottomOut) addHeight">
+            <ul class="btn2">
+              <li data-alt="tab1" class="active">TOP7</li>
+              <li data-alt="tab2" class="">이용문의</li>
+              <li data-alt="tab3" class="">결제/영수증</li>
+              <li data-alt="tab4" class="">쿠폰/포인트</li>
+            </ul>
+          </div>
+          
+          <div class="tabContents" data-scroll="toggle(.fromBottomIn, .fromBottomOut) addHeight">
+            <div id="tab1" class="active" style="">
+
+              <div class="accordion">
+                <div class="title on"><span>Q</span> [숙박] 예약을 취소하고 싶어요.</div>
+                <div class="content on" style="height: 156px; padding-top: 20px; margin-top: 0px; padding-bottom: 20px; margin-bottom: 0px;">
+                  예약취소는  앱/웹 > 내정보 > 예약/구매내역에서 직접 가능합니다.<br><br>
+                  예약/결제 진행 당시 안내된 취소/환불 규정에 따라 처리되며, 취소수수료가 발생할 경우 취소수수료를 차감한 금액으로 환불 처리됩니다.
+                  일부 숙소에 한해 취소가 가능한 시점이나 앱/웹에서 취소가 불가할 수 있으니 이 경우에는 고객행복센터로 요청해 주시길 바랍니다.
+                </div>
+
+                <div class="title"><span>Q</span> [공통] 천재지변/감염병으로 인한 예약취소는 어떻게 하나요?</div>
+                <div class="content">
+                  천재지변(기상악화), 법정 감염병 등 불가항력적인 사유로 제휴점 이용이 불가할 경우 고객행복센터로 예약내역 및 증빙서류(결항확인서, e-티켓, 진단확인서 등)를 보내주시면 확인 후 예약취소 가능 여부를 확인해 드립니다.<br><br>
+                  다만, 당사는 판매 중개 플랫폼의 입장으로 제휴점에 대하여 취소/환불을 강제할 수 없어 각 제휴점의 규정에 근거하여 상황에 따라 수수료가 발생하거나 취소가 어려울 수 있는 점 양해 부탁드립니다.<br><br>
+                  [접수방법]<br>
+                  ※ 이메일 : help@goodchoice.kr (예약자명, 숙소명, 체크인 날짜 필수)<br>
+                  ※ 카카오톡 : 카카오톡 내 플러스 친구 > 여기어때 고객행복센터 추가
+                </div>
+
+                <div class="title"><span>Q</span> [숙박] 예약대기 건 예약취소하고 싶어요.</div>
+                <div class="content">
+                  예약 대기중에는 여기어때 고객행복센터에 예약취소 요청해주시길 바랍니다.<br><br>
+                  단, 예약확정이 될 경우 수수료가 발생하거나 예약취소가 불가할 수 있습니다.
+                </div>
+
+                <div class="title">
+                  <span>Q</span> [공통] 영수증/거래내역서 발급받고 싶어요.</div>
+                <div class="content">
+                  예약 정보와 결제 정보가 기재되어 있는 영수증 또는 거래내역서는 아래의 경로를 통하여 발급받으실 수 있습니다.<br><br>
+                  ■ 영수증<br>
+                  - 여기어때 App > 내 정보 > 예약 내역 > 예약 상세 화면 내 결제 증빙 보기 선택 > 영수증 보기<br>
+                  ※ 네이버페이 결제 시 결제사 페이지에서 확인 가능<br><br>
+                  ■ 거래내역서<br>
+                  - 여기어때 App > 내 정보 > 예약 내역 > 예약 상세 화면 내 결제 증빙 보기 선택 > 거래내역서 받기 > 수령할 메일 주소 입력 후 발송<br>
+                  ※ 소득 증빙 자료로 사용 불가하며(단순 거래 확인 용도이며 법적 효력 없음) <br>
+                  ※ 예약 완료(이용 확정), 이용 완료, 예약 취소 건에 대해서 발송 가능(예약 실패, 예약 대기 발송 불가)
+                </div>
+
+                <div class="title"><span>Q</span> [숙박] 체크인날짜/객실타입을 변경하고 싶어요.</div>
+                <div class="content">
+                  예약 결제 완료 후 날짜 및 객실타입 등 부분 변경은 불가합니다.<br><br>
+                  예약취소와 동일하게 취소 및 환불 규정에 따라 처리되므로 예약취소가 가능한 기간에는 예약취소 후 재결제 하셔서 이용 부탁드립니다.<br><br>
+                  만약, 예약취소가 불가하거나 수수료가 발생하는 경우라면 고객행복센터로 문의해주시길 바랍니다.
+                </div>
+              </div>
+            </div>
+
+            <div id="tab2" class="" style="">
+              <div class="accordion">
+                <div class="title on"><span>Q</span> [이용문의] 고객센터 연결 지연 시 어떻게 하나요?</div>
+                <div class="content on">
+                  일부 시간대에는 통화량이 많아 상담사 연결이 지연될 수 있습니다.<br><br>
+                  여기어때는 전화 상담 외에도 다양한 방식으로 상담이 가능하오니 연결 지연 시 1:1문의, 카카오톡을 통해 상담을 부탁드립니다.
+                </div>
+          
+                <div class="title"><span>Q</span> [이용문의] 어떻게하면 엘리트가 될 수 있나요?</div>
+                <div class="content">
+                  여기어때를 통해 국내 숙소/모바일티켓 상관없이 실 결제금액 3만원 이상 5번을 예약하면 자동 등업되어 엘리트가 됩니다.<br><br>
+                  나의 적립 상태는 앱 하단 내정보 > 엘리트 메뉴에서 확인해 주세요!<br>
+                  공간대여/실시간 렌터카 상품은 엘리트 적립에서 제외되니 참고바랍니다.
+                </div>
+          
+                <div class="title"><span>Q</span> [이용문의] 숙소 정보를 공유하는 기능이 있나요?</div>
+                <div class="content">
+                  숙소 상세페이지 > 오른쪽 상단의 공유하기 아이콘을 클릭하시면 카카오톡, 문자메시지로 빠르게 공유할 수 있습니다.<br><br>
+                  여기어때의 공유 기능을 통해 주변 지인들에게 숙소를 공유해 보세요!
+                </div>
+          
+                <div class="title"><span>Q</span> [이용문의]VIP 고객으로 선정되었다는 문자를 받았어요.</div>
+                <div class="content">
+                  여기어때를 서비스를 자주 이용해주시고 아껴주시는 고객님을 대상으로 VIP 고객센터 서비스를 운영하고있습니다.<br><br>
+                  안내해드린 기간 동안 앞으로 고객행복센터 연결 시 전담 해피니스가 배정되어 보다 더 빠르고 편리한 상담 서비스를 이용하실 수 있습니다.
+                </div>
+          
+                <div class="title"><span>Q</span> [이용문의] 엘리트 적립이 안돼요.</div>
+                <div class="content">
+                  엘리트는 여기어때를 통해 숙소/모바일티켓 상관없이 실 결제금액 3만원 이상 예약한 경우에만 적용되며 숙소는 체크아웃(퇴실), 모바일티켓은 이용 완료 후 자동 적립됩니다.<br><br>
+                  쿠폰/포인트 사용 후 실 결제금액이 3만원 미만일 경우 적립이 불가하오니 결제금액을 확인해주시길 바랍니다.<br>
+                  공간대여/실시간 렌터카 상품은 엘리트 적립에서 제외되니 참고바랍니다.
+                </div>
+              </div>
+            </div>
+
+            <div id="tab3" class="" style="">
+              <div class="accordion">
+                <div class="title on"><span>Q</span> 계좌 등록 후 은행에서 문자가 왔어요.</div>
+                <div class="content on">
+                  간편계좌이체, TOSS에 계좌 등록 시 은행에서 자동이체 서비스가 등록되었다는 문자가 발송될 수 있습니다.<br><br>
+                  매달 일정 금액이 자동이체 되는 것이 아니라, 결제 시 비밀번호 인증 후 이체되는 서비스이니 안심하고 이용해주시길 바랍니다.
+                </div>
+          
+                <div class="title"><span>Q</span> 거래내역서를 발급받고 싶어요.</div>
+                <div class="content">
+                  예약 정보와 결제 정보가 기재되어 있는 거래내역서는 아래의 경로를 통하여 발급받으실 수 있습니다.<br><br>
+                  여기어때 App > 내 정보 > 예약 내역 > 예약 상세 화면 내 결제 증빙 보기 선택 > 거래내역서 받기 > 수령할 메일 주소 입력 후 발송<br>
+                  ※ 거래내역서는 소득 증빙 자료로 사용 불가(단순 거래 확인 용도이며 법적 효력 없음) <br>
+                  ※ 예약 완료(이용 확정), 이용 완료, 예약 취소 건에 대해서 발송 가능(예약 실패, 예약 대기 발송 불가)
+                </div>
+          
+                <div class="title"><span>Q</span> 간편계좌이체 등록 해지는 어떻게 하나요?</div>
+                <div class="content">
+                  숙소 예약 페이지 내에서 변경이 가능합니다. <br><br>
+                  [해지 방법]<br>
+                  예약 페이지 > 간편계좌이체 결제수단 선택 > 결제하기 버튼 > 해지할 은행 선택> 계좌/비밀번호 관리 메뉴에서 해지 가능
+                  <br>*결제완료전 단계로 실제 결제가 발생되지 않습니다.
+                </div>
+          
+                <div class="title"><span>Q</span> 사용가능한 카드 종류가 없어요.</div>
+                <div class="content">
+                  여기어때 예약 서비스 결제 시 사용 가능한 카드 종류는 PG사(전자결제 대행사)에서 정하는 부분이므로 일부 카드는 결제지원이 불가할 수 있습니다.<br><br>
+                  IBK기업은행 카드의 경우 목록에서 비씨를 선택하시면 결제 가능하오니 이용에 참고 부탁드립니다.
+                </div>
+          
+                <div class="title"><span>Q</span> '영수증 확인하기' 누르면 흰색 화면만 보여요.</div>
+                <div class="content">
+                  사용하는 모바일 브라우저의 팝업이 차단되었을 경우, 빈 화면만 보이거나 하얗게 보일 수 있습니다.<br><br>
+                  모바일 브라우저의 팝업을 허용 한 후 다시 한 번 시도 부탁드립니다.<br><br>
+                  [안드로이드]<br>
+                  사용하는 모바일 브라우저 설정 > 사이트 설정 > 팝업 허용<br><br>
+                  [아이폰]<br>
+                  아이폰 > 설정 > Safari > 팝업 허용
+                </div>
+              </div>
+            </div>
+
+            <div id="tab4" class="" style="">
+              <div class="accordion">
+                <div class="title on"><span>Q</span> [포인트]포인트는 무엇인가요?</div>
+                <div class="content on">
+                  리얼리뷰 작성이나 이벤트 참여 등 여기어때 서비스를 이용하면서 적립된 포인트를 말해요.<br>
+                  포인트는 사용 기간 내에 여기어때 서비스를 이용할 때 쓸 수 있어요.
+                </div>
+          
+                <div class="title"><span>Q</span> [포인트]포인트 사용 기간이 궁금해요.</div>
+                <div class="content">
+                  포인트 사용 기간은 적립일에 따라 각각 달라요.
+                </div>
+          
+                <div class="title"><span>Q</span> [포인트]포인트 차감 순서가 궁금해요.</div>
+                <div class="content">
+                  포인트 차감 순서는 적립된 포인트 중 사용 기간이 가장 짧은 포인트부터 먼저 차감돼요.<br>
+                  사용 기간이 똑같다면, 적립일이 빠른 포인트부터 소멸돼요.
+                </div>
+          
+                <div class="title"><span>Q</span> [포인트] 소멸 예정 포인트는 무엇인가요?</div>
+                <div class="content">
+                  소멸 예정 포인트는 30일 이내에 소멸되는 포인트를 말해요.<br>
+                  사용 기간이 지난 포인트는 자동으로 소멸되고, 소멸된 포인트는 복원되지 않아요.
+                </div>
+          
+                <div class="title"><span>Q</span> [포인트] 소멸 예정인 포인트를 확인할 수 있나요?</div>
+                <div class="content">
+                  네, 30일 이내에 소멸될 포인트는 '내 정보> 포인트'에서 안내하고 있어요.<br>
+                  30일 이내에 소멸될 포인트가 없다면 따로 안내하지 않아요.<br>
+                  추가로 상세 내역을 통해 30일 이내 소멸될 포인트의 건수와 금액 그리고 사용 기간을 자세히 확인할 수 있어요.
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--// sub 콘텐츠 영역 -->
+
+    </div>
+	</section>
+
+
+
+<hr>
+<!-- ///////////////////////////////////////// -->
+<footer>
+  <div class="sns-icon">
+    <a target="_blank" href="https://www.facebook.com/goodchoiceofficial"><i class="fa-brands fa-facebook"></i></a>
+    <a target="_blank" href="https://www.youtube.com/channel/UCLI1HOVJdhWdVl9pT__g2Zw"><i class="fa-brands fa-youtube"></i></a>
+    <a target="_blank" href="https://www.instagram.com/goodchoice_official/"><i class="fa-brands fa-square-instagram"></i></a>
+  </div>
+
+  <div class="textAll">
+    <ul>
+      <li>
+        <a target="_blank" href="https://www.yeogi.com/policy/terms#TERMS">이용약관</a>
+        <a target="_blank" href="https://www.yeogi.com/policy/terms#PRIVACY_POLICY"><b>개인정보처리방침</b></a>
+        <a target="_blank" href="https://www.yeogi.com/policy/terms#CONSUMER_DISPUTE_RESOLUTION_STANDARD">소비자 분쟁해결 기준</a>
+        <a target="_blank" href="https://www.yeogi.com/policy/terms#CONTENT_INDUSTRY_PROMOTION_ACT">콘텐츠산업진흥법에 의한 표시</a>
+      </li>
+    </ul>
+
+    <div class="text">
+      <span>(주)여기어때컴퍼니</span>
+      <address>주소 : 서울특별시 강남구 봉은사로 479, 479타워 11층 | 대표이사 : 정명훈 | 사업자등록번호 : 742-86-00224사업자정보확인<br>
+        전자우편주소 : help@goodchoice.kr | 통신판매번호 : 2017-서울강남-01779 | 관광사업자 등록번호 : 제1026-24호 | <br>
+        전화번호 : 1670-6250 | 호스팅서비스제공자의 상호 표시 : (주)여기어때컴퍼니<br>
+        (주)여기어때컴퍼니는 통신판매중개자로서 통신판매의 당사자가 아니며, 상품의 예약, 이용 및 환불 등과 관련한 의무와 책임은 각 판매자에게 있습니다.</address>
+      <span>Copyright GC COMPANY Corp. All rights reserved.</span>
+    </div>
+  </div>
+</footer>
+
+</div>
+
+	<!-- Script Source -->
+	<script src="js/jquery-3.7.0.min.js"></script>
+	<script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+	<script src="js/prefixfree.min.js"></script>
+	<script src="js/index.js"></script>
+
+  <!--Data Scroll PlugIn-->
+<script src="js/ScrollTrigger.min.js"></script>
+<script>
+window.counter = function() {
+    // this refers to the html element with the data-scroll-showCallback tag
+    var span = this.querySelector('span');
+    var current = parseInt(span.textContent);
+    
+    span.textContent = current + 1;
+};
+
+document.addEventListener('DOMContentLoaded', function(){
+  ScrollTrigger.init();
+});
+</script>
+</body>
+</html>

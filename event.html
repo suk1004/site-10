@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"> 
+<title>event</title>
+<link rel="stylesheet" href="css/sub.css">
+<link rel="stylesheet" href="css/ScrollTrigger.css"> <!--Data Scroll PlugIn-->
+</head>
+<body>
+<!-- TOP버튼 -->
+<div class="top"><a href="#"></a></div>
+<!-- 가상링크(#)를 걸면 맨위로 올라감  -->
+
+  <div id="wrap">
+    <header>
+      <nav>
+        <div class="logo">
+          <a href="index.html"><img src="image/logo.png" alt=""></a>
+        </div>
+        <ul class="gnb">
+          <li><i class="fa-solid fa-arrow-right-to-bracket"></i></li>
+          <li><a class="modal-notice" href="#none">로그인</a></li>
+          <li>|</li>
+          <li><a href="Join.html">회원가입</a></li>
+        </ul>
+        <div class="allmenu">
+          <div class="trigger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </nav>
+
+
+
+
+
+
+      <!-- 로그인 -->
+      <div class="log">
+        <div class="modal2">
+          <div class="modal-content">
+            <a href="#none" class="btn-close">X</a>
+
+            <div class="modal-body">
+							<img src="image/logo.png" alt="">
+
+							<div class="modal_log">
+								<input type="text" class="modal_box1" name="id" placeholder="아이디를 입력해 주세요.">
+								<input type="password" class="modal_bo2" name="pw" placeholder="비밀번호를 입력해 주세요.">
+							</div>
+
+							<div class="modal_ckb">
+								<div class="modal_ck">
+									<input type="checkbox" value="i1" name="item"><span>자동로그인</span>
+									<p class="modal_ck2">아이디 찾기 | 비밀번호 찾기</p>
+								</div>
+							</div>
+
+							<div class="modal_bto">
+								<a href="index.html" class="modal_bt1">로그인</a>
+							</div>
+
+							<p class="modal_t1">SNS계정 로그인</p>
+
+							<div class="modal_icon">
+								<a target="_blank" href="https://nid.naver.com/nidlogin.login?url=https%3A%2F%2Fpost.naver.com%2Fmy.naver%3FmemberNo%3D25599212"><img src="image/naver.png" alt="" class="modal_icon1"></a>
+								<a target="_blank" href="https://accounts.kakao.com/login/?continue=https%3A%2F%2Fkauth.kakao.com%2Foauth%2Fauthorize%3Fresponse_type%3Dcode%26redirect_uri%3Dhttps%253A%252F%252Fplatform.yeogi.com%252Fapi%252Fusers%252Foauth%252Fkakao%26state%3Da2313799-0a92-4dc9-88e4-b999da3d49ca%26through_account%3Dtrue%26client_id%3D1eff36c782b04e85889f4698bef8673f#login"><img src="image/kakao.png" alt="" class="modal_icon1"></a>
+								<a target="_blank" href="https://www.facebook.com/login.php?skip_api_login=1&api_key=607467975974643&kid_directed_site=0&app_id=607467975974643&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fv16.0%2Fdialog%2Foauth%3Fdisplay%3Dpopup%26scope%3Demail%26client_id%3D607467975974643%26redirect_uri%3Dhttps%253A%252F%252Fplatform.yeogi.com%252Fapi%252Fusers%252Foauth%252Ffacebook%26state%3Dcabae7b9-7c39-4288-9fa5-108556fab1e8%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3Dcc4ba1ac-a24d-4b05-b299-715ceaf19122%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fplatform.yeogi.com%2Fapi%2Fusers%2Foauth%2Ffacebook%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3Dcabae7b9-7c39-4288-9fa5-108556fab1e8%23_%3D_&display=popup&locale=ko_KR&pl_dbl=0"><img src="image/facebook.png" alt="" class="modal_icon1"></a>
+								<a target="_blank" href="https://accounts.google.com/o/oauth2/v2/auth/oauthchooseaccount?response_type=code&prompt=consent&access_type=offline&include_granted_scopes=true&client_id=452013183738-0cmufbcgmh4gn4piq4c99nnqidgvb54n.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Fplatform.yeogi.com%2Fapi%2Fusers%2Foauth%2Fgoogle&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&state=86f7476e-42c6-4032-8c64-1b3cf742138e&service=lso&o2v=2&theme=glif&flowName=GeneralOAuthFlow"><img src="image/google.png" alt="" class="modal_icon1"></a>
+								<a target="_blank" href="https://appleid.apple.com/auth/authorize?client_id=com.yeogi.user&redirect_uri=https%3A%2F%2Fplatform.yeogi.com%2Flogin&response_type=code%20id_token&state=aa0eabc9-72f0-4f0e-824d-ee47cea20886&scope=email&nonce=eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IlhBNUszMkRHNUMifQ.eyJpc3MiOiJHWjlGNExVTURUIiwiaWF0IjoxNzAxMDU3Njk3LCJleHAiOjE3MTY2MDk2OTcsImF1ZCI6Imh0dHBzOi8vYXBwbGVpZC5hcHBsZS5jb20iLCJzdWIiOiJjb20ueWVvZ2kudXNlciJ9.1mCY-6Dsd7mVSTucNmaO76ymbJVvZjr28728mDXU_7IcQ0eTrpJAkNxYZAQybxAuZ9djxr6SGLh7eTl8noDj1Q&response_mode=web_message&frame_id=0b917853-6646-43c2-bec5-74a6d0485dac&m=11&v=1.5.5"><img src="image/apple.png" alt="" class="modal_icon1"></a>
+							</div>
+							
+							<p class="modal_ck4_1"><span>아직 여기어때 회원이 아니신가요?</span><br>
+								회원가입하고 다양한 혜택과 서비스를 이용해 보세요!</p>
+
+							<div class="modal_ck4">
+								<a href="Join.html" class="modal_ck4_2">회원가입</a>
+							</div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+      <!-- Sitemap -->
+      <div class="modal">
+        <div class="sitemap">
+            <ul class="sitemap_list">
+                <li>
+                    <a href="#">회사 .</a>
+                    <ul class="site_sub">
+                        <li><a href="about1.html">회사소개</a>
+                            <div class="site_menu">
+                                <p class="site_main"><a href="#">숙소 .</a></p>
+                                <p><a href="stay1.html">프리미엄 블랙</a></p>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">서비스 .</a>
+                    <ul class="site_sub">
+                        <li><a href="notice1.html">자주 묻는 질문</a></li>
+                        <li><a href="notice2.html">기업출장 / 복지 서비스 문의</a>
+                            <div class="site_menu">
+                                <p class="site_main"><a href="event.html">이벤트 .</a></p>
+                            </div>
+                            <div class="search0">
+                              <input type="text" class="searchTerm0" placeholder="지역, 숙소명을 입력하세요">
+                              <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+      </div>
+  
+  <!-- /////////////////////////Menu///////////////////////////// -->
+      <div class="main_menu">
+        <div class="main_menu2">
+          <ul class="main_menu3">
+            <li class="main"><a href="#none">회사</a>
+              <ul class="sub">
+                <li><a href="about1.html">회사소개</a></li>
+              </ul>
+            </li>
+            <li class="main"><a href="#none">숙소</a>
+              <ul class="sub">
+                <li><a href="stay1.html">프리미엄블랙</a></li>
+              </ul>
+            </li>
+            <li class="main"><a href="event.html">이벤트</a>
+            </li>
+            <li class="main"><a href="#none">서비스</a>
+              <ul class="sub">
+                <li><a href="notice1.html">자주 묻는 질문</a></li>
+                <li class="sub_2"><a href="notice2.html">기업 서비스 문의</a></li>
+              </ul>
+            </li>
+          </ul>
+          <div class="search">
+            <input type="text" class="searchTerm" placeholder="지역, 숙소명을 입력하세요">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+
+<!-- ///////////////main////////////// -->
+	<main id="sub3">
+		<div class="sheader-caption">
+			<h2 data-scroll="toggle(.fromBottomIn, .fromBottomOut) addHeight">EVENT</h2>
+		</div>
+	</main>
+
+
+
+
+	<section id="container">
+    <div class="section_in">
+      
+      <!-- 서브페이지별로 바뀌는 컨텐츠내용영역 -->
+
+      <!-- About1 -->
+    <div class="location">
+      <i class="fa fa-home"></i><span> &gt; event &gt; </span><span>이벤트</span>
+    </div>
+
+    <div class="about_top" data-scroll="toggle(.fromBottomIn, .fromBottomOut) addHeight">
+      <p class="about_top_t1">이벤트</p>
+      <p class="about_top_t2">다양한 혜택과 이벤트를 만나보세요.</p>
+    </div>
+
+
+
+<!-- sub 콘텐츠 영역 -->
+    <div class="event1">
+      <ul class="clear scroll_gallery gallery">
+
+        <li data-scroll="toggle(.fromBottomIn, .fromBottomOut) addHeight">
+          <a href="#"><img src="image/aca_list_01.jpg" alt=""></a>
+          <div class="event_txt">
+            <h2>설날맞이 쿠폰세트</h2>
+            <ul>
+              <li><span>마감기한</span>24.01.15 - 24.02.11 23:59</li>
+            </ul>
+          </div>
+        </li>
+        
+        <li data-scroll="toggle(.fromBottomIn, .fromBottomOut) addHeight">
+          <a href="#"><img src="image/aca_list_02.jpg" alt=""></a>
+          <div class="event_txt">
+            <h2>설 연휴 얼리버드 쿠폰팩</h2>
+            <ul>
+              <li><span>마감기한</span>24.01.01 - 24.01.31 23:59</li>
+            </ul>
+          </div>
+        </li>
+
+        <li data-scroll="toggle(.fromBottomIn, .fromBottomOut) addHeight">
+          <a href="#"><img src="image/aca_list_03.jpg" alt=""></a>
+          <div class="event_txt">
+            <h2>베스트 호텔딜</h2>
+            <ul>
+              <li><span>마감기한</span>24.01.22 - 24.01.24 23:59</li>
+            </ul>
+          </div>
+        </li>
+
+        <li data-scroll="toggle(.fromBottomIn, .fromBottomOut) addHeight">
+          <a href="#"><img src="image/aca_list_04.jpg" alt=""></a>
+          <div class="event_txt">
+            <h2>전국 900개 펜션 최대 5만원 할인</h2>
+            <ul>
+              <li><span>마감기한</span>24.01.21 - 24.01.31 23:59</li>
+            </ul>
+          </div>
+        </li>
+
+        <li data-scroll="toggle(.fromBottomIn, .fromBottomOut) addHeight">
+          <a href="#"><img src="image/aca_list_05.jpg" alt=""></a>
+          <div class="event_txt">
+            <h2>전국 인기 호텔 최대 5만원 할인</h2>
+            <ul>
+              <li><span>마감기한</span>24.01.21 - 24.01.31 23:59</li>
+            </ul>
+          </div>
+        </li>
+
+        <li data-scroll="toggle(.fromBottomIn, .fromBottomOut) addHeight">
+          <a href="#"><img src="image/aca_list_06.jpg" alt=""></a>
+          <div class="event_txt">
+            <h2>새해 게하 여행 최대 5만원 할인</h2>
+            <ul>
+              <li><span>마감기한</span>24.01.21 - 24.01.31 23:59</li>
+            </ul>
+          </div>
+        </li>
+
+      </ul>
+
+
+      <div class="more">MORE +</div>
+
+
+        <ul class="clear scroll_gallery more_view">
+          <li data-scroll="toggle(.fromBottomIn, .fromBottomOut) addHeight">
+            <a href="#"><img src="image/aca_list_07.jpg" alt=""></a>
+            <div class="event_txt">
+              <h2>1월 신규회원 웰컴쿠폰</h2>
+              <ul>
+                <li><span>마감기한</span>24.01.01 - 24.01.31 23:59</li>
+              </ul>
+            </div>
+          </li>
+
+          <li data-scroll="toggle(.fromBottomIn, .fromBottomOut) addHeight">
+            <a href="#"><img src="image/aca_list_08.jpg" alt=""></a>
+            <div class="event_txt">
+              <h2>24년 1월 결제 프로모션 모음</h2>
+              <ul>
+                <li><span>마감기한</span>24.01.01 - 24.01.31 23:59</li>
+              </ul>
+            </div>
+          </li>
+
+
+        </ul>
+    </div>
+<!--// sub 콘텐츠 영역 -->
+
+    </div>
+	</section>
+
+
+
+<hr>
+<!-- ///////////////////////////////////////// -->
+<footer>
+  <div class="sns-icon">
+    <a target="_blank" href="https://www.facebook.com/goodchoiceofficial"><i class="fa-brands fa-facebook"></i></a>
+    <a target="_blank" href="https://www.youtube.com/channel/UCLI1HOVJdhWdVl9pT__g2Zw"><i class="fa-brands fa-youtube"></i></a>
+    <a target="_blank" href="https://www.instagram.com/goodchoice_official/"><i class="fa-brands fa-square-instagram"></i></a>
+  </div>
+
+  <div class="textAll">
+    <ul>
+      <li>
+        <a target="_blank" href="https://www.yeogi.com/policy/terms#TERMS">이용약관</a>
+        <a target="_blank" href="https://www.yeogi.com/policy/terms#PRIVACY_POLICY"><b>개인정보처리방침</b></a>
+        <a target="_blank" href="https://www.yeogi.com/policy/terms#CONSUMER_DISPUTE_RESOLUTION_STANDARD">소비자 분쟁해결 기준</a>
+        <a target="_blank" href="https://www.yeogi.com/policy/terms#CONTENT_INDUSTRY_PROMOTION_ACT">콘텐츠산업진흥법에 의한 표시</a>
+      </li>
+    </ul>
+
+    <div class="text">
+      <span>(주)여기어때컴퍼니</span>
+      <address>주소 : 서울특별시 강남구 봉은사로 479, 479타워 11층 | 대표이사 : 정명훈 | 사업자등록번호 : 742-86-00224사업자정보확인<br>
+        전자우편주소 : help@goodchoice.kr | 통신판매번호 : 2017-서울강남-01779 | 관광사업자 등록번호 : 제1026-24호 | <br>
+        전화번호 : 1670-6250 | 호스팅서비스제공자의 상호 표시 : (주)여기어때컴퍼니<br>
+        (주)여기어때컴퍼니는 통신판매중개자로서 통신판매의 당사자가 아니며, 상품의 예약, 이용 및 환불 등과 관련한 의무와 책임은 각 판매자에게 있습니다.</address>
+      <span>Copyright GC COMPANY Corp. All rights reserved.</span>
+    </div>
+  </div>
+</footer>
+
+</div>
+
+	<!-- Script Source -->
+	<script src="js/jquery-3.7.0.min.js"></script>
+	<script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+	<script src="js/prefixfree.min.js"></script>
+	<script src="js/index.js"></script>
+
+  <!--Data Scroll PlugIn-->
+<script src="js/ScrollTrigger.min.js"></script>
+<script>
+window.counter = function() {
+    // this refers to the html element with the data-scroll-showCallback tag
+    var span = this.querySelector('span');
+    var current = parseInt(span.textContent);
+    
+    span.textContent = current + 1;
+};
+
+document.addEventListener('DOMContentLoaded', function(){
+  ScrollTrigger.init();
+});
+</script>
+</body>
+</html>

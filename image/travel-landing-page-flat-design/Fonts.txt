@@ -1,0 +1,17 @@
+Fonts used in this design:
+
+Font: Antonio
+Author: Vernon Adams
+Url: http://www.fontsquirrel.com/fonts/antonio
+
+Font: Desyrel
+Author: Apostrophic Labs
+Url: http://www.fontsquirrel.com/fonts/desyrel
+
+Font: Raleway
+Author: The League of Moveable Type
+Url: http://www.fontsquirrel.com/fonts/raleway
+
+Font: Roboto
+Author: Christian Robertson
+Url: http://www.fontsquirrel.com/fonts/roboto
